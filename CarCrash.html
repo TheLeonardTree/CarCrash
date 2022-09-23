@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Auto death</h2>
+
+<p>There is a fatal car crash every 60 seconds in the usa.</p>
+<p id="demo"></p>
+<script>
+const element = document.getElementById("demo");
+setInterval(function () 
+{
+element.innerHTML += "<p>A new car crash death</p>";
+
+var audio = new Audio('https://cdn.freesound.org/previews/237/237375_1502374-lq.mp3');
+audio.play();
+
+}, 60000);
+
+
+</script>
+
+</body>
+</html>
